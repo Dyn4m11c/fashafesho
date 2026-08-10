@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Rubik', sans-serif;
+  
+  --color-primary-pink: #FF9AA2;
+  --color-primary-purple: #C8B6FF;
+  --color-accent-yellow: #FDFD96;
+  --color-accent-blue: #A0E7E5;
+  --color-accent-teal: #9BF6FF;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #fdf5f6; /* Very light pastel pink/purple */
+  color: #4a4a4a;
+  overflow-x: hidden;
+}
+
+/* Custom Utilities for glassmorphism and roundedness */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(255, 154, 162, 0.15);
+}
+
+.magic-hover {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.magic-hover:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.05);
+}
