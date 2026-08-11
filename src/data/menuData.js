@@ -54,9 +54,9 @@ export const menuData = {
       subtitle: { ar: "", he: "", en: "" },
       items: [
         { id: "american_biscuit", name: { ar: "مع بسكويت", he: "עם ביסקוויט", en: "With Biscuit" }, price: 7, color: "bg-teal-100", tagColor: "bg-teal-500", image: "american_biscuit.jpg" },
-        { id: "american_small", name: { ar: "بعلبة صغيرة", he: "בכוס קטנה", en: "Small Cup" }, price: 5, color: "bg-blue-100", tagColor: "bg-blue-500", image: "american_small.jpg" },
-        { id: "american_medium", name: { ar: "وسط", he: "בינוני", en: "Medium" }, price: 8, color: "bg-yellow-100", tagColor: "bg-yellow-500", image: "american_medium.jpg" },
-        { id: "american_large", name: { ar: "كبير", he: "גדול", en: "Large" }, price: 12, color: "bg-pink-200", tagColor: "bg-pink-600", image: "american_large.jpg" }
+        { id: "american_small", name: { ar: "علبة صغيرة", he: "בכוס קטנה", en: "Small Cup" }, price: 5, color: "bg-blue-100", tagColor: "bg-blue-500", image: "american_small.jpg" },
+        { id: "american_medium", name: { ar: "علبة وسط", he: "בינוני", en: "Medium" }, price: 8, color: "bg-yellow-100", tagColor: "bg-yellow-500", image: "american_medium.jpg" },
+        { id: "american_large", name: { ar: "علبة كبيرة", he: "גדול", en: "Large" }, price: 12, color: "bg-pink-200", tagColor: "bg-pink-600", image: "american_large.jpg" }
       ]
     },
     {
