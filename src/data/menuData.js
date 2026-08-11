@@ -90,7 +90,7 @@ export const menuData = {
       title: { ar: "المشروبات", he: "משקאות", en: "Beverages" },
       subtitle: { ar: "", he: "", en: "" },
       items: [
-        { id: "shake_pretzel", name: { ar: "ميلك شيك بيجله", he: "מילקשייק בייגלה", en: "Pretzel Milkshake" }, price: 30, color: "bg-yellow-100", tagColor: "bg-yellow-500", image: "shake_pretzel.jpg" },
+        { id: "shake_pretzel", name: { ar: "ميلك شيك بيجلا", he: "מילקשייק בייגלה", en: "Pretzel Milkshake" }, price: 30, color: "bg-yellow-100", tagColor: "bg-yellow-500", image: "shake_pretzel.jpg" },
         { id: "shake_kinder", name: { ar: "ميلك شيك كيندر", he: "מילקשייק קינדר", en: "Kinder Milkshake" }, price: 30, color: "bg-yellow-200", tagColor: "bg-yellow-600", image: "shake_kinder.jpg" },
         { id: "shake_vanilla", name: { ar: "ميلك شيك فانيل", he: "מילקשייק וניל", en: "Vanilla Milkshake" }, price: 25, color: "bg-blue-100", tagColor: "bg-blue-500", image: "shake_vanilla.jpg" },
         { id: "shake_pistachio", name: { ar: "ميلك شيك فستق حلبي", he: "מילקשייק פיסטוק חלבי", en: "Pistachio Milkshake" }, price: 35, color: "bg-pink-100", tagColor: "bg-pink-500", image: "shake_pistachio.jpg" },
