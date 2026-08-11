@@ -106,20 +106,17 @@ export const menuData = {
     }
   ],
   options: {
-    ice_cream: {
-      title: { ar: "نكهات الآيس كريم", he: "טעמי גלידה", en: "Ice Cream Flavors" },
+    sauces: {
+      title: { ar: "صوصات مميزة", he: "רטבים מיוחדים", en: "Special Sauces" },
       items: [
-        { id: "ic_lotus", name: { ar: "لوتس", he: "לוטוס", en: "Lotus" }, image: "ic_lotus.jpg" },
-        { id: "ic_kinder", name: { ar: "كيندر", he: "קינדר", en: "Kinder" }, image: "ic_kinder.jpg" },
-        { id: "ic_pretzel", name: { ar: "بيچلا", he: "בייגלה", en: "Pretzel" }, image: "ic_pretzel.jpg" },
-        { id: "ic_halva", name: { ar: "حلاوة", he: "חלווה", en: "Halva" }, image: "ic_halva.jpg" },
-        { id: "ic_chocolate", name: { ar: "شوكلاتة", he: "שוקולד", en: "Chocolate" }, image: "ic_chocolate.jpg" },
-        { id: "ic_vanilla", name: { ar: "ڤانيل", he: "וניל", en: "Vanilla" }, image: "ic_vanilla.jpg" },
-        { id: "ic_pistachio", name: { ar: "بستاشيو", he: "פיסטוק", en: "Pistachio" }, image: "ic_pistachio.jpg" },
-        { id: "ic_oreo", name: { ar: "اوريو", he: "אוראו", en: "Oreo" }, image: "ic_oreo.jpg" },
-        { id: "ic_sweet_berries", name: { ar: "توت بري حلو", he: "פירות יער מתוק", en: "Sweet Wild Berries" }, image: "ic_sweet_berries.jpg" },
-        { id: "ic_wild_berries", name: { ar: "توت بري", he: "פירות יער", en: "Wild Berries" }, image: "ic_wild_berries.jpg" },
-        { id: "ic_blue_marshmellow", name: { ar: "مارشميلو", he: "מרשמלו", en: "Blue Marshmellow" }, image: "ic_blue_marshmellow.jpg" }
+        { id: "sauce_white_chocolate", name: { ar: "شوكلاتة بيضاء", he: "שוקולד לבן", en: "White Chocolate" }, image: "sauce_white_chocolate.jpg" },
+        { id: "sauce_nutella", name: { ar: "نوتيلا", he: "נותילא", en: "nutella" }, image: "sauce_chocolate.jpg" },
+        { id: "sauce_pistachio", name: { ar: "بستاشيو", he: "פיסטוק", en: "Pistachio" }, image: "sauce_pistachio.jpg" },
+        { id: "sauce_crunchy_white_choc", name: { ar: "شوكلاتة بيضاء كرنشي", he: "שוקולד לבן קראנצ'י", en: "Crunchy White Chocolate" }, image: "sauce_crunchy_white_choc.jpg" },
+        { id: "sauce_lotus", name: { ar: "لوتس", he: "לוטוס", en: "Lotus" }, image: "sauce_lotus.jpg" },
+        { id: "sauce_marshmallow", name: { ar: "مارشميلو", he: "מרשמלו", en: "Marshmellow" }, image: "sauce_marshmallow.jpg" },
+        { id: "sauce_kinder", name: { ar: "كيندر", he: "קינדר", en: "Kinder" }, image: "sauce_kinder.jpg" },
+        { id: "sauce_caramel", name: { ar: "كراميل", he: "קרמל", en: "Caramel" }, image: "sauce_caramel.jpg" }
       ]
     },
     additions: {
@@ -145,17 +142,20 @@ export const menuData = {
         { id: "fruit_mango", name: { ar: "مانچا", he: "מנגו", en: "Mango" }, image: "fruit_mango.jpg" },
       ]
     },
-    sauces: {
-      title: { ar: "صوصات مميزة", he: "רטבים מיוחדים", en: "Special Sauces" },
+    ice_cream: {
+      title: { ar: "نكهات الآيس كريم", he: "טעמי גלידה", en: "Ice Cream Flavors" },
       items: [
-        { id: "sauce_white_chocolate", name: { ar: "شوكلاتة بيضاء", he: "שוקולד לבן", en: "White Chocolate" }, image: "sauce_white_chocolate.jpg" },
-        { id: "sauce_nutella", name: { ar: "نوتيلا", he: "נותילא", en: "nutella" }, image: "sauce_chocolate.jpg" },
-        { id: "sauce_pistachio", name: { ar: "بستاشيو", he: "פיסטוק", en: "Pistachio" }, image: "sauce_pistachio.jpg" },
-        { id: "sauce_crunchy_white_choc", name: { ar: "شوكلاتة بيضاء كرنشي", he: "שוקולד לבן קראנצ'י", en: "Crunchy White Chocolate" }, image: "sauce_crunchy_white_choc.jpg" },
-        { id: "sauce_lotus", name: { ar: "لوتس", he: "לוטוס", en: "Lotus" }, image: "sauce_lotus.jpg" },
-        { id: "sauce_marshmallow", name: { ar: "مارشميلو", he: "מרשמלו", en: "Marshmellow" }, image: "sauce_marshmallow.jpg" },
-        { id: "sauce_kinder", name: { ar: "كيندر", he: "קינדר", en: "Kinder" }, image: "sauce_kinder.jpg" },
-        { id: "sauce_caramel", name: { ar: "كراميل", he: "קרמל", en: "Caramel" }, image: "sauce_caramel.jpg" }
+        { id: "ic_lotus", name: { ar: "لوتس", he: "לוטוס", en: "Lotus" }, image: "ic_lotus.jpg" },
+        { id: "ic_kinder", name: { ar: "كيندر", he: "קינדר", en: "Kinder" }, image: "ic_kinder.jpg" },
+        { id: "ic_pretzel", name: { ar: "بيچلا", he: "בייגלה", en: "Pretzel" }, image: "ic_pretzel.jpg" },
+        { id: "ic_halva", name: { ar: "حلاوة", he: "חלווה", en: "Halva" }, image: "ic_halva.jpg" },
+        { id: "ic_chocolate", name: { ar: "شوكلاتة", he: "שוקולד", en: "Chocolate" }, image: "ic_chocolate.jpg" },
+        { id: "ic_vanilla", name: { ar: "ڤانيل", he: "וניל", en: "Vanilla" }, image: "ic_vanilla.jpg" },
+        { id: "ic_pistachio", name: { ar: "بستاشيو", he: "פיסטוק", en: "Pistachio" }, image: "ic_pistachio.jpg" },
+        { id: "ic_oreo", name: { ar: "اوريو", he: "אוראו", en: "Oreo" }, image: "ic_oreo.jpg" },
+        { id: "ic_sweet_berries", name: { ar: "توت بري حلو", he: "פירות יער מתוק", en: "Sweet Wild Berries" }, image: "ic_sweet_berries.jpg" },
+        { id: "ic_wild_berries", name: { ar: "توت بري", he: "פירות יער", en: "Wild Berries" }, image: "ic_wild_berries.jpg" },
+        { id: "ic_blue_marshmellow", name: { ar: "مارشميلو", he: "מרשמלו", en: "Blue Marshmellow" }, image: "ic_blue_marshmellow.jpg" }
       ]
     },
     mojito_base: {
