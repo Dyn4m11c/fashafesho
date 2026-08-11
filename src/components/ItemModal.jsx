@@ -11,7 +11,8 @@ export default function ItemModal({ item, lang, onClose, dir, onAddToCart }) {
     fruits: [],
     sauces: [],
     mojito_base: [],
-    mojito_flavors: []
+    mojito_flavors: [],
+    snow_thread_sauces: []
   });
 
   const calculatePrice = () => {
@@ -132,6 +133,10 @@ export default function ItemModal({ item, lang, onClose, dir, onAddToCart }) {
               {menuData.options.mojito_base && renderOptionGroup('mojito_base', menuData.options.mojito_base)}
               {menuData.options.mojito_flavors && renderOptionGroup('mojito_flavors', menuData.options.mojito_flavors)}
             </>
+          ) : item.id === 'snow_thread' ? (
+            <>
+              {menuData.options.snow_thread_sauces && renderOptionGroup('snow_thread_sauces', menuData.options.snow_thread_sauces)}
+            </>
           ) : item.categoryId !== 'beverages' ? (
             <>
               {renderOptionGroup('sauces', menuData.options.sauces)}
@@ -144,7 +149,9 @@ export default function ItemModal({ item, lang, onClose, dir, onAddToCart }) {
           ) : (
             <div className="flex items-center justify-center h-full">
               <p className="text-gray-400 font-medium text-lg text-center">
-                {lang === 'ar' ? 'لا توجد إضافات متوفرة للمشروبات' : lang === 'he' ? 'אין תוספות זמינות למשקאות' : 'No additions available for beverages'}
+                {item.categoryId === 'beverages' 
+                  ? (lang === 'ar' ? 'لا توجد إضافات متوفرة للمشروبات' : lang === 'he' ? 'אין תוספות זמינות למשקאות' : 'No additions available for beverages')
+                  : (lang === 'ar' ? 'لا توجد إضافات متوفرة لهذا الصنف' : lang === 'he' ? 'אין תוספות זמינות לפריט זה' : 'No additions available for this item')}
               </p>
             </div>
           )}
