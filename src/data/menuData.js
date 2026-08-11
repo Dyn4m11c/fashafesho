@@ -40,7 +40,7 @@ export const menuData = {
     },
     {
       id: "waffles",
-      title: { ar: "الوافل", he: "וופל", en: "Waffles" },
+      title: { ar: "البافل", he: "וופל", en: "Waffles" },
       subtitle: { ar: "", he: "", en: "" },
       items: [
         { id: "waffle_regular", name: { ar: "بافل", he: "וופל", en: "Waffle" }, price: 20, color: "bg-yellow-200", tagColor: "bg-yellow-600", image: "waffle_regular.jpg" },
