@@ -134,12 +134,12 @@ export default function ItemModal({ item, lang, onClose, dir, onAddToCart }) {
             </>
           ) : item.categoryId !== 'beverages' ? (
             <>
+              {renderOptionGroup('sauces', menuData.options.sauces)}
+              {renderOptionGroup('additions', menuData.options.additions)}
+              {renderOptionGroup('fruits', menuData.options.fruits)}
               {menuData.options.ice_cream && 
                !['crepe_regular', 'crepe_sushi', 'crepe_fettuccine', 'churros_tear', 'churros_balls', 'churros_6', 'donut', 'fashafesh_1', 'fashafesh_box'].includes(item.id) && 
                renderOptionGroup('ice_cream', menuData.options.ice_cream)}
-              {renderOptionGroup('additions', menuData.options.additions)}
-              {renderOptionGroup('fruits', menuData.options.fruits)}
-              {renderOptionGroup('sauces', menuData.options.sauces)}
             </>
           ) : (
             <div className="flex items-center justify-center h-full">
