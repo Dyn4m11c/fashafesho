@@ -126,7 +126,7 @@ export const menuData = {
       title: { ar: "إضافات مميزة", he: "תוספות מיוחדות", en: "Special Additions" },
       items: [
         { id: "add_mm", name: { ar: "M&M", he: "M&M", en: "M&M" }, image: "add_mm.jpg" },
-        { id: "add_marshmallow_pink_white", name: { ar: "مارشميلو زهري وأبيض", he: "מרשמלו ורוד ולבן", en: "Pink & White Marshmallow" }, image: "add_marshmallow_pink_white.jpg" },
+        { id: "add_marshmallow_pink_white", name: { ar: "مارشميلو", he: "מרשמלו", en: "Marshmellow" }, image: "add_marshmallow_pink_white.jpg" },
         { id: "add_white_choc_balls", name: { ar: "كرات شوكلاتة بيضاء", he: "כדורי שוקולד לבן", en: "White Chocolate Balls" }, image: "add_white_choc_balls.jpg" },
         { id: "add_oreo", name: { ar: "أوريو", he: "אוראו", en: "Oreo" }, image: "add_oreo.jpg" },
         { id: "add_lotus", name: { ar: "لوتس", he: "לוטוס", en: "Lotus" }, image: "add_lotus.jpg" },
@@ -140,7 +140,7 @@ export const menuData = {
       title: { ar: "فواكه", he: "פירות", en: "Fruits" },
       items: [
         { id: "fruit_pineapple", name: { ar: "اناناس", he: "אננס", en: "Pineapple" }, image: "fruit_pineapple.jpg" },
-        { id: "fruit_watermelon", name: { ar: "بطيخة", he: "אבטיח", en: "Watermelon" }, image: "fruit_watermelon.jpg" },
+        { id: "fruit_watermelon", name: { ar: "بطيخ", he: "אבטיח", en: "Watermelon" }, image: "fruit_watermelon.jpg" },
         { id: "fruit_melon", name: { ar: "شُمام", he: "מלון", en: "Melon" }, image: "fruit_melon.jpg" },
         { id: "fruit_mango", name: { ar: "مانچا", he: "מנגו", en: "Mango" }, image: "fruit_mango.jpg" },
       ]
@@ -149,7 +149,7 @@ export const menuData = {
       title: { ar: "صوصات مميزة", he: "רטבים מיוחדים", en: "Special Sauces" },
       items: [
         { id: "sauce_white_chocolate", name: { ar: "شوكلاتة بيضاء", he: "שוקולד לבן", en: "White Chocolate" }, image: "sauce_white_chocolate.jpg" },
-        { id: "sauce_chocolate", name: { ar: "شوكلاتة", he: "שוקולד", en: "Chocolate" }, image: "sauce_chocolate.jpg" },
+        { id: "sauce_chocolate", name: { ar: "نوتيلا", he: "נותילא", en: "nutella" }, image: "sauce_chocolate.jpg" },
         { id: "sauce_pistachio", name: { ar: "بستاشيو", he: "פיסטוק", en: "Pistachio" }, image: "sauce_pistachio.jpg" },
         { id: "sauce_crunchy_white_choc", name: { ar: "شوكلاتة بيضاء كرنشي", he: "שוקולד לבן קראנצ'י", en: "Crunchy White Chocolate" }, image: "sauce_crunchy_white_choc.jpg" },
         { id: "sauce_lotus", name: { ar: "لوتس", he: "לוטוס", en: "Lotus" }, image: "sauce_lotus.jpg" },
