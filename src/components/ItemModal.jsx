@@ -9,7 +9,9 @@ export default function ItemModal({ item, lang, onClose, dir, onAddToCart }) {
     ice_cream: [],
     additions: [],
     fruits: [],
-    sauces: []
+    sauces: [],
+    mojito_base: [],
+    mojito_flavors: []
   });
 
   const calculatePrice = () => {
@@ -125,7 +127,12 @@ export default function ItemModal({ item, lang, onClose, dir, onAddToCart }) {
 
         {/* Scrollable Options Area */}
         <div className="flex-1 overflow-y-auto px-8 py-6 custom-scrollbar">
-          {item.categoryId !== 'beverages' ? (
+          {item.id === 'mojito' ? (
+            <>
+              {menuData.options.mojito_base && renderOptionGroup('mojito_base', menuData.options.mojito_base)}
+              {menuData.options.mojito_flavors && renderOptionGroup('mojito_flavors', menuData.options.mojito_flavors)}
+            </>
+          ) : item.categoryId !== 'beverages' ? (
             <>
               {menuData.options.ice_cream && 
                !['crepe_regular', 'crepe_sushi', 'crepe_fettuccine', 'churros_tear', 'churros_balls', 'churros_6', 'donut', 'fashafesh_1', 'fashafesh_box'].includes(item.id) && 

@@ -54,9 +54,9 @@ export const menuData = {
       subtitle: { ar: "", he: "", en: "" },
       items: [
         { id: "american_biscuit", name: { ar: "مع بسكويت", he: "עם ביסקוויט", en: "With Biscuit" }, price: 7, color: "bg-teal-100", tagColor: "bg-teal-500", image: "american_biscuit.jpg" },
-        { id: "american_small", name: { ar: "علبة صغيرة", he: "בכוס קטנה", en: "Small Cup" }, price: 5, color: "bg-blue-100", tagColor: "bg-blue-500", image: "american_small.jpg" },
-        { id: "american_medium", name: { ar: "علبة وسط", he: "בינוני", en: "Medium" }, price: 8, color: "bg-yellow-100", tagColor: "bg-yellow-500", image: "american_medium.jpg" },
-        { id: "american_large", name: { ar: "علبة كبيرة", he: "גדול", en: "Large" }, price: 12, color: "bg-pink-200", tagColor: "bg-pink-600", image: "american_large.jpg" }
+        { id: "american_small", name: { ar: "علبة صغيرة", he: "כוס קטנה", en: "Small Cup" }, price: 5, color: "bg-blue-100", tagColor: "bg-blue-500", image: "american_small.jpg" },
+        { id: "american_medium", name: { ar: "علبة وسط", he: "כוס בינונית", en: "Medium Cup" }, price: 8, color: "bg-yellow-100", tagColor: "bg-yellow-500", image: "american_medium.jpg" },
+        { id: "american_large", name: { ar: "علبة كبيرة", he: "כוס גדולה", en: "Large Cup" }, price: 12, color: "bg-pink-200", tagColor: "bg-pink-600", image: "american_large.jpg" }
       ]
     },
     {
@@ -149,7 +149,7 @@ export const menuData = {
       title: { ar: "صوصات مميزة", he: "רטבים מיוחדים", en: "Special Sauces" },
       items: [
         { id: "sauce_white_chocolate", name: { ar: "شوكلاتة بيضاء", he: "שוקולד לבן", en: "White Chocolate" }, image: "sauce_white_chocolate.jpg" },
-        { id: "sauce_chocolate", name: { ar: "نوتيلا", he: "נותילא", en: "nutella" }, image: "sauce_chocolate.jpg" },
+        { id: "sauce_nutella", name: { ar: "نوتيلا", he: "נותילא", en: "nutella" }, image: "sauce_chocolate.jpg" },
         { id: "sauce_pistachio", name: { ar: "بستاشيو", he: "פיסטוק", en: "Pistachio" }, image: "sauce_pistachio.jpg" },
         { id: "sauce_crunchy_white_choc", name: { ar: "شوكلاتة بيضاء كرنشي", he: "שוקולד לבן קראנצ'י", en: "Crunchy White Chocolate" }, image: "sauce_crunchy_white_choc.jpg" },
         { id: "sauce_lotus", name: { ar: "لوتس", he: "לוטוס", en: "Lotus" }, image: "sauce_lotus.jpg" },
