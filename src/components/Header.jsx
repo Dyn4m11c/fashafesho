@@ -13,7 +13,7 @@ export default function Header({ lang, onLogoClick, cartCount = 0, onCartClick }
       {/* Cart Button */}
       <button 
         onClick={(e) => { e.stopPropagation(); onCartClick && onCartClick(); }}
-        className="absolute top-8 right-8 rtl:left-8 rtl:right-auto z-20 bg-white shadow-lg rounded-full p-3 text-primary-purple hover:bg-gray-50 transition-transform hover:scale-105"
+        className="absolute top-8 right-8 rtl:left-8 rtl:right-auto z-20 bg-black/60 neon-border rounded-full p-3 text-white hover:bg-black/80 transition-transform hover:scale-105"
       >
         <ShoppingCart className="w-6 h-6" />
         {cartCount > 0 && (
@@ -25,13 +25,13 @@ export default function Header({ lang, onLogoClick, cartCount = 0, onCartClick }
 
       <div className="relative z-10 flex flex-col items-center justify-center space-y-4" onClick={onLogoClick}>
         <div className="flex items-center space-x-3 text-primary-pink">
-          <Sparkles className="w-8 h-8 animate-pulse" />
-          <h1 className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary-pink to-primary-purple drop-shadow-sm px-4" style={{lineHeight: '1.4'}}>
+          <Sparkles className="w-8 h-8 animate-pulse text-[#ff007f]" />
+          <h1 className="text-5xl md:text-6xl font-black neon-text px-4" style={{lineHeight: '1.4'}}>
             {menuData.header.title[lang]}
           </h1>
-          <Heart className="w-8 h-8 animate-bounce text-primary-pink" />
+          <Heart className="w-8 h-8 animate-bounce text-[#ff007f]" />
         </div>
-        <p className="text-lg md:text-xl font-medium text-gray-500 flex items-center">
+        <p className="text-lg md:text-xl font-medium text-gray-300 flex items-center">
           <Wand2 className="w-5 h-5 mr-2 text-accent-yellow" />
           {lang === 'ar' ? 'ميني لذيذة .. قرمشة ساحرة!' : 
            lang === 'he' ? 'מיני טעים .. פריכות קסומה!' : 

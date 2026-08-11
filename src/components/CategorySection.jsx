@@ -6,15 +6,15 @@ export default function CategorySection({ category, lang, onItemClick }) {
     <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
       {/* Category Title Banner */}
       <div className="flex flex-col items-center justify-center mb-16 relative">
-        <div className="bg-white/80 backdrop-blur-sm rounded-full py-3 px-12 shadow-sm border-2 border-primary-pink/20 relative z-10">
-          <h2 className="text-3xl md:text-5xl font-black text-primary-pink text-center drop-shadow-sm">
+        <div className="bg-black/60 rounded-full py-3 px-12 neon-border shadow-sm relative z-10">
+          <h2 className="text-3xl md:text-5xl font-black neon-text text-center">
             {category.title[lang]}
           </h2>
         </div>
         
         {/* Subtitle Ribbon */}
         {category.subtitle[lang] && (
-          <div className="bg-primary-pink text-white py-1 px-8 rounded-full -mt-4 z-20 text-sm md:text-base font-medium shadow-md flex items-center space-x-2">
+          <div className="bg-black/80 neon-border text-pink-300 py-1 px-8 rounded-full -mt-4 z-20 text-sm md:text-base font-medium shadow-md flex items-center space-x-2">
             <span>✨</span>
             <span>{category.subtitle[lang]}</span>
             <span>✨</span>

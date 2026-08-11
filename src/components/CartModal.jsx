@@ -24,27 +24,27 @@ export default function CartModal({ cart, lang, onClose, dir, onRemoveItem, onEm
       ></div>
       
       {/* Modal Content */}
-      <div className="relative bg-white w-full max-w-2xl max-h-[90vh] rounded-[40px] shadow-2xl overflow-hidden flex flex-col transform animate-[scale-up_0.3s_ease-out]">
+      <div className="relative bg-[#0d0517] w-full max-w-2xl max-h-[90vh] rounded-[40px] shadow-[0_0_30px_rgba(255,0,127,0.3)] neon-border overflow-hidden flex flex-col transform animate-[scale-up_0.3s_ease-out]">
         
         {/* Close Button */}
         <button 
           onClick={onClose}
-          className="absolute top-4 right-4 rtl:left-4 rtl:right-auto z-10 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors shadow-sm"
+          className="absolute top-4 right-4 rtl:left-4 rtl:right-auto z-10 w-10 h-10 bg-black/60 neon-border rounded-full flex items-center justify-center text-white hover:bg-black/80 hover:text-pink-400 transition-colors shadow-sm"
         >
           <span className="text-2xl leading-none">&times;</span>
         </button>
 
         {/* Header */}
-        <div className="px-8 pt-10 pb-6 relative bg-gray-50 border-b border-gray-100">
+        <div className="px-8 pt-10 pb-6 relative bg-[#1a0b2e] border-b border-pink-900/50">
           <div className="flex items-center space-x-4 rtl:space-x-reverse">
-            <div className="w-16 h-16 bg-primary-pink/10 text-primary-pink rounded-2xl flex items-center justify-center">
+            <div className="w-16 h-16 bg-[#ff007f]/20 neon-border text-pink-400 rounded-2xl flex items-center justify-center">
               <ShoppingBag className="w-8 h-8" />
             </div>
             <div>
-              <h2 className="text-3xl font-black text-gray-800">
+              <h2 className="text-3xl font-black text-white neon-text">
                 {lang === 'ar' ? 'سلة المشتريات' : lang === 'he' ? 'סל קניות' : 'Shopping Cart'}
               </h2>
-              <p className="text-gray-500 font-medium">
+              <p className="text-gray-300 font-medium">
                 {cart.length} {lang === 'ar' ? 'عناصر' : lang === 'he' ? 'פריטים' : 'items'}
               </p>
             </div>
@@ -52,9 +52,9 @@ export default function CartModal({ cart, lang, onClose, dir, onRemoveItem, onEm
         </div>
 
         {/* Scrollable Cart Items Area */}
-        <div className="flex-1 overflow-y-auto px-8 py-6 custom-scrollbar bg-white">
+        <div className="flex-1 overflow-y-auto px-8 py-6 custom-scrollbar bg-[#0d0517]">
           {cart.length === 0 ? (
-            <div className="flex flex-col items-center justify-center h-full text-gray-400 space-y-4">
+            <div className="flex flex-col items-center justify-center h-full text-pink-900 space-y-4">
               <ShoppingBag className="w-16 h-16 opacity-20" />
               <p className="text-xl font-bold">
                 {lang === 'ar' ? 'السلة فارغة' : lang === 'he' ? 'הסל ריק' : 'Cart is empty'}
@@ -63,9 +63,9 @@ export default function CartModal({ cart, lang, onClose, dir, onRemoveItem, onEm
           ) : (
             <div className="space-y-4">
               {cart.map((cartItem) => (
-                <div key={cartItem.id} className="flex items-start justify-between p-4 rounded-2xl border-2 border-gray-50 bg-gray-50/50">
+                <div key={cartItem.id} className="flex items-start justify-between p-4 rounded-2xl border border-[#ff007f]/30 bg-black/60 shadow-[0_0_15px_rgba(255,0,127,0.1)]">
                   <div className="flex space-x-4 rtl:space-x-reverse">
-                    <div className={classNames("w-16 h-16 rounded-xl flex items-center justify-center text-2xl shrink-0 overflow-hidden", cartItem.item.color || "bg-pink-100")}>
+                    <div className="w-16 h-16 rounded-xl flex items-center justify-center text-2xl shrink-0 overflow-hidden bg-black border-2 border-[#ff007f]">
                        {cartItem.item.image ? (
                          <img 
                            src={cartItem.item.image.startsWith('http') ? cartItem.item.image : `/images/${cartItem.item.image}`} 
@@ -77,21 +77,21 @@ export default function CartModal({ cart, lang, onClose, dir, onRemoveItem, onEm
                        <span style={{ display: cartItem.item.image ? 'none' : 'block' }}>🍩</span>
                     </div>
                     <div>
-                      <h4 className="text-lg font-bold text-gray-800">
+                      <h4 className="text-lg font-bold text-white">
                         {cartItem.quantity > 1 ? (
                           <span className="text-primary-pink mr-1 rtl:ml-1 rtl:mr-0">{cartItem.quantity}x </span>
                         ) : null}
                         {cartItem.item.name[lang]}
                       </h4>
-                      <p className="text-primary-purple font-bold">{cartItem.totalPrice} NIS</p>
+                      <p className="text-pink-400 font-bold">{cartItem.totalPrice} NIS</p>
                       
                       {/* Selected Options Summary */}
                       <div className="mt-2 space-y-1">
                         {Object.entries(cartItem.selectedOptions).map(([category, options]) => {
                           if (options.length === 0) return null;
                           return (
-                            <p key={category} className="text-sm text-gray-500">
-                              <span className="font-semibold text-gray-700 capitalize">{category}: </span>
+                            <p key={category} className="text-sm text-gray-400">
+                              <span className="font-semibold text-gray-200 capitalize">{category}: </span>
                               {options.map(opt => getOptionName(category, opt)).join(', ')}
                             </p>
                           );
@@ -101,7 +101,7 @@ export default function CartModal({ cart, lang, onClose, dir, onRemoveItem, onEm
                   </div>
                   <button 
                     onClick={() => onRemoveItem(cartItem.id)}
-                    className="p-2 text-gray-400 hover:text-red-500 hover:bg-red-50 rounded-full transition-colors"
+                    className="p-2 text-gray-400 hover:text-pink-500 hover:bg-pink-900/30 rounded-full transition-colors"
                   >
                     <Trash2 className="w-5 h-5" />
                   </button>
@@ -112,24 +112,24 @@ export default function CartModal({ cart, lang, onClose, dir, onRemoveItem, onEm
         </div>
 
         {/* Footer */}
-        <div className="p-6 border-t border-gray-100 bg-gray-50">
+        <div className="p-6 border-t border-pink-900/50 bg-[#0a0311]">
           <div className="flex justify-between items-center mb-6">
-            <span className="text-xl font-bold text-gray-500">
+            <span className="text-xl font-bold text-gray-400">
               {lang === 'ar' ? 'المجموع:' : lang === 'he' ? 'סך הכל:' : 'Total:'}
             </span>
-            <span className="text-3xl font-black text-gray-900">{totalCartPrice} NIS</span>
+            <span className="text-3xl font-black text-white neon-text">{totalCartPrice} NIS</span>
           </div>
 
           <div className="flex space-x-4 rtl:space-x-reverse">
             {showConfirmEmpty ? (
-              <div className="flex w-full items-center justify-between bg-red-50 p-2 rounded-2xl border border-red-100">
-                <span className="text-red-600 font-bold px-4">
+              <div className="flex w-full items-center justify-between bg-red-950/50 p-2 rounded-2xl border border-red-500/50">
+                <span className="text-red-400 font-bold px-4">
                   {lang === 'ar' ? 'هل أنت متأكد؟' : lang === 'he' ? 'האם אתה בטוח?' : 'Are you sure?'}
                 </span>
                 <div className="flex space-x-2 rtl:space-x-reverse">
                   <button 
                     onClick={() => setShowConfirmEmpty(false)}
-                    className="px-4 py-2 bg-white text-gray-600 font-bold rounded-xl shadow-sm hover:bg-gray-50 transition-colors"
+                    className="px-4 py-2 bg-black/60 text-white font-bold rounded-xl shadow-sm hover:bg-black/80 border border-gray-500 transition-colors"
                   >
                     {lang === 'ar' ? 'إلغاء' : lang === 'he' ? 'ביטול' : 'Cancel'}
                   </button>
@@ -149,7 +149,7 @@ export default function CartModal({ cart, lang, onClose, dir, onRemoveItem, onEm
                 {cart.length > 0 && (
                   <button 
                     onClick={() => setShowConfirmEmpty(true)}
-                    className="magic-hover flex items-center justify-center space-x-2 rtl:space-x-reverse px-6 py-3 bg-red-50 text-red-500 font-bold rounded-2xl border border-red-100 hover:bg-red-500 hover:text-white hover:border-red-500 transition-all shadow-sm"
+                    className="magic-hover flex items-center justify-center space-x-2 rtl:space-x-reverse px-6 py-3 bg-red-950/30 text-red-400 font-bold rounded-2xl border border-red-500/50 hover:bg-red-900/50 hover:text-white transition-all shadow-sm"
                   >
                     <Trash2 className="w-5 h-5" />
                     <span>
@@ -159,7 +159,7 @@ export default function CartModal({ cart, lang, onClose, dir, onRemoveItem, onEm
                 )}
                 <button 
                   onClick={onClose}
-                  className="flex-1 px-8 py-3 bg-gradient-to-r from-primary-pink to-primary-purple text-white font-bold rounded-2xl shadow-lg hover:shadow-xl transition-all"
+                  className="flex-1 px-8 py-3 bg-black/60 neon-border text-white font-bold rounded-2xl shadow-lg hover:shadow-[0_0_20px_#ff007f] transition-all"
                 >
                   {lang === 'ar' ? 'إغلاق' : lang === 'he' ? 'סגור' : 'Close'}
                 </button>

@@ -22,7 +22,7 @@ export const menuData = {
       subtitle: { ar: "", he: "", en: "" },
       items: [
         { id: "donut", name: { ar: "دونات", he: "דונאטס", en: "Donut" }, price: 4, color: "bg-teal-100", tagColor: "bg-teal-500", image: "donut.jpg" },
-        { id: "fish", name: { ar: "سمكة مع بوظة", he: "דג עם גלידה", en: "Fish with ice cream" }, price: 22, color: "bg-blue-100", tagColor: "bg-blue-500", image: "fish.jpg" },
+        { id: "fish", name: { ar: "سمكة مع بوظة", he: "דג עם גלידה", en: "Fish with ice cream" }, price: 25, color: "bg-blue-100", tagColor: "bg-blue-500", image: "fish.jpg" },
         { id: "churros_6", name: { ar: "تشوروز (6 قطع)", he: "צ'ורוס (6 חתיכות)", en: "Churros (6 pieces)" }, price: 30, color: "bg-yellow-100", tagColor: "bg-yellow-500", image: "churros_6.jpg" },
         { id: "churros_balls", name: { ar: "تشوروز طابات (10 حبات)", he: "כדורי צ'ורוס (10 יחידות)", en: "Churros Balls (10 pieces)" }, price: 35, color: "bg-purple-100", tagColor: "bg-purple-500", image: "churros_balls.jpg" },
         { id: "churros_tear", name: { ar: "تشوروز دمعة", he: "טיפת צ'ורוס", en: "Churros Tear" }, price: 7, color: "bg-pink-200", tagColor: "bg-pink-600", image: "churros_tear.jpg" }
@@ -64,6 +64,7 @@ export const menuData = {
       title: { ar: "آيس كريم بالعلبة", he: "גלידה בכוס", en: "Ice Cream Cup" },
       subtitle: { ar: "", he: "", en: "" },
       items: [
+        { id: "snow_thread", name: { ar: "بوظة خيوط الثلج", he: "גלידת חוטי שלג", en: "Snow Thread Ice Cream" }, price: 10, color: "bg-pink-200", tagColor: "bg-pink-600", image: "snow_thread.jpg" },
         { id: "cup_small_1", name: { ar: "صغير - طابة واحدة", he: "קטן - כדור אחד", en: "Small - 1 Scoop" }, price: 5, color: "bg-purple-200", tagColor: "bg-purple-600", image: "cup_small_1.jpg" },
         { id: "cup_small_2", name: { ar: "صغير - طابتين", he: "קטן - 2 כדורים", en: "Small - 2 Scoops" }, price: 8, color: "bg-teal-200", tagColor: "bg-teal-600", image: "cup_small_2.jpg" },
         { id: "cup_med_2", name: { ar: "وسط - طابتين", he: "בינוני - 2 כדורים", en: "Medium - 2 Scoops" }, price: 10, color: "bg-blue-200", tagColor: "bg-blue-600", image: "cup_med_2.jpg" },
@@ -117,7 +118,8 @@ export const menuData = {
         { id: "ic_pistachio", name: { ar: "بستاشيو", he: "פיסטוק", en: "Pistachio" }, image: "ic_pistachio.jpg" },
         { id: "ic_oreo", name: { ar: "اوريو", he: "אוראו", en: "Oreo" }, image: "ic_oreo.jpg" },
         { id: "ic_sweet_berries", name: { ar: "توت بري حلو", he: "פירות יער מתוק", en: "Sweet Wild Berries" }, image: "ic_sweet_berries.jpg" },
-        { id: "ic_wild_berries", name: { ar: "توت بري", he: "פירות יער", en: "Wild Berries" }, image: "ic_wild_berries.jpg" }
+        { id: "ic_wild_berries", name: { ar: "توت بري", he: "פירות יער", en: "Wild Berries" }, image: "ic_wild_berries.jpg" },
+        { id: "ic_blue_marshmellow", name: { ar: "مارشميلو", he: "מרשמלו", en: "Blue Marshmellow" }, image: "ic_blue_marshmellow.jpg" }
       ]
     },
     additions: {

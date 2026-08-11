@@ -14,18 +14,27 @@
 
 body {
   font-family: 'Rubik', sans-serif;
-  background-color: #fdf5f6; /* Very light pastel pink/purple */
-  color: #4a4a4a;
+  background-color: #1a0b2e; /* Darker purple */
+  color: #ffffff; /* White text */
   overflow-x: hidden;
 }
 
 /* Custom Utilities for glassmorphism and roundedness */
 .glass-panel {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 8px 32px 0 rgba(255, 154, 162, 0.15);
+  border: 1px solid rgba(255, 154, 162, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(255, 154, 162, 0.1);
+}
+
+.neon-border {
+  border: 2px solid #ff007f;
+  box-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, inset 0 0 10px #ff007f;
+}
+
+.neon-text {
+  color: #fff;
 }
 
 .magic-hover {

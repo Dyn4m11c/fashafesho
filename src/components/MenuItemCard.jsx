@@ -5,7 +5,7 @@ export default function MenuItemCard({ item, lang, onItemClick }) {
   return (
     <div 
       onClick={() => onItemClick(item)}
-      className="relative magic-hover bg-white rounded-[32px] p-4 shadow-sm border-[3px] border-transparent hover:border-primary-pink/30 flex flex-col items-center justify-between text-center overflow-visible mt-12 mb-4 mx-2 cursor-pointer"
+      className="relative magic-hover bg-black/60 rounded-[32px] p-4 neon-border shadow-sm hover:shadow-lg hover:shadow-pink-500/50 flex flex-col items-center justify-between text-center overflow-visible mt-12 mb-4 mx-2 cursor-pointer"
     >
 
       {/* Price Badge */}
@@ -36,14 +36,14 @@ export default function MenuItemCard({ item, lang, onItemClick }) {
       {/* Item Name */}
       <h3 className={classNames(
         "text-lg font-bold mb-2 min-h-[3rem] flex items-center justify-center w-full px-2",
-        "text-gray-700"
+        "text-white neon-text"
       )}>
         {item.name[lang]}
       </h3>
 
       {/* The curved decorative bottom - like the packaging in the image */}
-      <div className="w-full bg-gradient-to-r from-orange-100 via-orange-200 to-orange-100 rounded-b-2xl rounded-t-sm h-12 mt-2 flex items-center justify-center relative overflow-hidden shadow-inner">
-        <span className="text-orange-800/40 font-black text-sm tracking-widest uppercase opacity-70">Fashafesho</span>
+      <div className="w-full bg-gradient-to-r from-pink-900/60 via-purple-900/60 to-pink-900/60 rounded-b-2xl rounded-t-sm h-12 mt-2 flex items-center justify-center relative overflow-hidden shadow-inner neon-border border-t-0 border-l-0 border-r-0 border-b-2 border-pink-500/50">
+        <span className="text-pink-300 font-black text-sm tracking-widest uppercase opacity-80">Fashafesho</span>
         {/* Small decorative stars/rainbows on packaging */}
         <span className="absolute left-2 top-2 text-[10px]">🌈</span>
         <span className="absolute right-2 bottom-2 text-[10px]">⭐</span>

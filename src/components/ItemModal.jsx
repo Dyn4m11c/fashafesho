@@ -49,7 +49,7 @@ export default function ItemModal({ item, lang, onClose, dir, onAddToCart }) {
   const renderOptionGroup = (categoryKey, optionsData) => {
     return (
       <div className="mb-6">
-        <h4 className="text-xl font-bold text-gray-800 mb-3">{optionsData.title[lang]}</h4>
+        <h4 className="text-xl font-bold text-pink-400 mb-3">{optionsData.title[lang]}</h4>
         <div className="flex flex-wrap gap-2">
           {optionsData.items.map(opt => {
             const isSelected = selectedOptions[categoryKey].includes(opt.id);
@@ -60,15 +60,15 @@ export default function ItemModal({ item, lang, onClose, dir, onAddToCart }) {
                 className={classNames(
                   "flex items-center gap-2 px-3 py-2 rounded-full text-sm font-semibold border-2 transition-all duration-200",
                   isSelected
-                    ? "bg-primary-pink border-primary-pink text-white shadow-md transform scale-105"
-                    : "bg-white border-gray-200 text-gray-600 hover:border-primary-pink/50"
+                    ? "bg-[#ff007f]/20 border-[#ff007f] text-white shadow-[0_0_10px_#ff007f] transform scale-105"
+                    : "bg-black/50 border-pink-900/50 text-gray-300 hover:border-[#ff007f]/50 hover:text-white"
                 )}
               >
                 {opt.image && (
                   <img 
                     src={opt.image.startsWith('http') ? opt.image : `/images/${opt.image}`} 
                     alt={opt.name[lang]} 
-                    className="w-6 h-6 rounded-full object-cover shrink-0 bg-white"
+                    className="w-6 h-6 rounded-full object-cover shrink-0 bg-black/50"
                     onError={(e) => { e.target.style.display = 'none'; }}
                   />
                 )}
@@ -90,20 +90,20 @@ export default function ItemModal({ item, lang, onClose, dir, onAddToCart }) {
       ></div>
       
       {/* Modal Content */}
-      <div className="relative bg-white w-full max-w-2xl max-h-[90vh] rounded-[40px] shadow-2xl overflow-hidden flex flex-col transform animate-[scale-up_0.3s_ease-out]">
+      <div className="relative bg-[#0d0517] neon-border w-full max-w-2xl max-h-[90vh] rounded-[40px] shadow-[0_0_30px_rgba(255,0,127,0.3)] overflow-hidden flex flex-col transform animate-[scale-up_0.3s_ease-out]">
         
         {/* Close Button */}
         <button 
           onClick={onClose}
-          className="absolute top-4 right-4 rtl:left-4 rtl:right-auto z-10 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors shadow-sm"
+          className="absolute top-4 right-4 rtl:left-4 rtl:right-auto z-10 w-10 h-10 bg-black/60 neon-border rounded-full flex items-center justify-center text-white hover:bg-black/80 hover:text-pink-400 transition-colors shadow-sm"
         >
           <span className="text-2xl leading-none">&times;</span>
         </button>
 
         {/* Header / Item Info */}
-        <div className={classNames("px-8 pt-10 pb-6 relative", item.color || "bg-pink-100")}>
+        <div className="px-8 pt-10 pb-6 relative bg-black/40 border-b border-pink-900/50">
           <div className="flex items-center space-x-6 rtl:space-x-reverse">
-            <div className="w-24 h-24 rounded-full border-4 border-white flex items-center justify-center text-4xl shadow-inner bg-white shrink-0 overflow-hidden">
+            <div className="w-24 h-24 rounded-full border-4 border-[#ff007f] shadow-[0_0_15px_#ff007f] flex items-center justify-center text-4xl shadow-inner bg-black shrink-0 overflow-hidden">
                {item.image ? (
                  <img 
                    src={item.image.startsWith('http') ? item.image : `/images/${item.image}`} 
@@ -115,8 +115,8 @@ export default function ItemModal({ item, lang, onClose, dir, onAddToCart }) {
                <span style={{ display: item.image ? 'none' : 'block' }}>🍩</span>
             </div>
             <div>
-              <h2 className="text-3xl font-black text-gray-800 mb-2">{item.name[lang]}</h2>
-              <div className="inline-block px-4 py-1 rounded-full text-white font-bold text-lg bg-gray-900/10 shadow-sm">
+              <h2 className="text-3xl font-black text-white neon-text mb-2">{item.name[lang]}</h2>
+              <div className="inline-block px-4 py-1 rounded-full text-white font-bold text-lg bg-black/60 neon-border shadow-sm">
                 {item.price} NIS
               </div>
             </div>
@@ -127,7 +127,9 @@ export default function ItemModal({ item, lang, onClose, dir, onAddToCart }) {
         <div className="flex-1 overflow-y-auto px-8 py-6 custom-scrollbar">
           {item.categoryId !== 'beverages' ? (
             <>
-              {menuData.options.ice_cream && renderOptionGroup('ice_cream', menuData.options.ice_cream)}
+              {menuData.options.ice_cream && 
+               !['crepe_regular', 'crepe_sushi', 'crepe_fettuccine', 'churros_tear', 'churros_balls', 'churros_6', 'donut', 'fashafesh_1', 'fashafesh_box'].includes(item.id) && 
+               renderOptionGroup('ice_cream', menuData.options.ice_cream)}
               {renderOptionGroup('additions', menuData.options.additions)}
               {renderOptionGroup('fruits', menuData.options.fruits)}
               {renderOptionGroup('sauces', menuData.options.sauces)}
@@ -142,23 +144,23 @@ export default function ItemModal({ item, lang, onClose, dir, onAddToCart }) {
         </div>
 
         {/* Footer */}
-        <div className="p-6 border-t border-gray-100 bg-gray-50 flex justify-between items-center gap-4">
+        <div className="p-6 border-t border-pink-900/50 bg-[#0a0311] flex justify-between items-center gap-4">
           {/* Quantity Selector */}
-          <div className="flex items-center justify-between w-40 bg-white border border-gray-200 rounded-full p-1 shadow-sm">
+          <div className="flex items-center justify-between w-40 bg-black/60 border border-[#ff007f]/50 rounded-full p-1 shadow-[0_0_10px_rgba(255,0,127,0.2)]">
             <button 
               onClick={() => setQuantity(Math.max(1, quantity - 1))}
-              className="w-10 h-10 rounded-full flex items-center justify-center text-2xl font-bold text-gray-600 hover:bg-gray-100 transition-colors"
+              className="w-10 h-10 rounded-full flex items-center justify-center text-2xl font-bold text-pink-500 hover:bg-[#ff007f]/20 transition-colors"
             >-</button>
-            <span className="text-2xl font-bold flex-1 text-center text-gray-800 select-none">{quantity}</span>
+            <span className="text-2xl font-bold flex-1 text-center text-white select-none">{quantity}</span>
             <button 
               onClick={() => setQuantity(quantity + 1)}
-              className="w-10 h-10 rounded-full flex items-center justify-center text-2xl font-bold text-gray-600 hover:bg-gray-100 transition-colors"
+              className="w-10 h-10 rounded-full flex items-center justify-center text-2xl font-bold text-pink-500 hover:bg-[#ff007f]/20 transition-colors"
             >+</button>
           </div>
 
           <button 
             onClick={handleAddToCart}
-            className="magic-hover w-full md:w-auto px-8 py-3 bg-gradient-to-r from-primary-pink to-primary-purple text-white font-bold rounded-2xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center space-x-2 rtl:space-x-reverse"
+            className="magic-hover w-full md:w-auto px-8 py-3 bg-black/60 neon-border text-white font-bold rounded-2xl shadow-lg hover:shadow-[0_0_20px_#ff007f] transition-all flex items-center justify-center space-x-2 rtl:space-x-reverse"
           >
             <span>
               {lang === 'ar' ? 'أضف إلى السلة' : lang === 'he' ? 'הוסף לסל' : 'Add to Cart'}
@@ -175,11 +177,11 @@ export default function ItemModal({ item, lang, onClose, dir, onAddToCart }) {
           width: 8px;
         }
         .custom-scrollbar::-webkit-scrollbar-track {
-          background: #f1f1f1; 
+          background: #1a0b2e; 
           border-radius: 4px;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb {
-          background: #d1d5db; 
+          background: #ff007f; 
           border-radius: 4px;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {

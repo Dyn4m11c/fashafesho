@@ -61,11 +61,8 @@ function App() {
 
   return (
     <div className="min-h-screen relative w-full" dir={dir}>
-      {/* Playful background graphics */}
-      <div className="fixed inset-0 pointer-events-none z-0 opacity-40" style={{
-        backgroundImage: 'radial-gradient(circle at 20% 30%, rgba(255,154,162,0.4) 0%, transparent 20%), radial-gradient(circle at 80% 60%, rgba(200,182,255,0.4) 0%, transparent 20%)',
-        backgroundSize: '100% 100%'
-      }}></div>
+      {/* Playful background graphics removed in favor of dark neon body background */}
+      <div className="fixed inset-0 pointer-events-none z-0 opacity-40"></div>
 
       <div className="relative z-10 pb-20">
         <LanguageToggle currentLang={lang} setLang={setLang} />
@@ -82,7 +79,7 @@ function App() {
             <div className="flex flex-col items-center justify-center mt-12 space-y-6">
               <button
                 onClick={goToMenu}
-                className="magic-hover w-full max-w-sm py-6 bg-gradient-to-r from-primary-pink to-primary-purple text-white text-3xl font-black rounded-3xl shadow-xl flex items-center justify-center space-x-4 rtl:space-x-reverse"
+                className="magic-hover w-full max-w-sm py-6 bg-black/60 text-white text-3xl font-black rounded-3xl neon-border shadow-xl flex items-center justify-center space-x-4 rtl:space-x-reverse"
               >
                 <span>{lang === 'ar' ? 'القائمة' : lang === 'he' ? 'תפריט' : 'Menu'}</span>
                 <span>🍽️</span>
@@ -90,13 +87,13 @@ function App() {
 
               <div className="flex gap-6 w-full max-w-sm justify-center mt-8">
                 {/* Social Buttons */}
-                <a href="https://www.instagram.com/fashafesho8/" target="_blank" rel="noopener noreferrer" className="magic-hover w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md text-pink-600 hover:bg-pink-50 transition-colors">
+                <a href="https://www.instagram.com/fashafesho8/" target="_blank" rel="noopener noreferrer" className="magic-hover w-16 h-16 bg-black/60 neon-border rounded-full flex items-center justify-center shadow-md text-pink-500 hover:bg-black/80 transition-colors">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                 </a>
-                <a href="https://www.tiktok.com/@fashafesho0" target="_blank" rel="noopener noreferrer" className="magic-hover w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md text-black hover:bg-gray-100 transition-colors">
+                <a href="https://www.tiktok.com/@fashafesho0" target="_blank" rel="noopener noreferrer" className="magic-hover w-16 h-16 bg-black/60 neon-border rounded-full flex items-center justify-center shadow-md text-white hover:bg-black/80 transition-colors">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" /></svg>
                 </a>
-                <a href="https://waze.com/ul/hsvc455pjb" target="_blank" rel="noopener noreferrer" className="magic-hover w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md text-blue-500 hover:bg-blue-50 transition-colors">
+                <a href="https://waze.com/ul/hsvc455pjb" target="_blank" rel="noopener noreferrer" className="magic-hover w-16 h-16 bg-black/60 neon-border rounded-full flex items-center justify-center shadow-md text-blue-400 hover:bg-black/80 transition-colors">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: 'translateY(-1px)' }}><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" /><circle cx="7" cy="17" r="2" /><path d="M9 17h6" /><circle cx="17" cy="17" r="2" /></svg>
                 </a>
               </div>
@@ -108,7 +105,7 @@ function App() {
             <div>
               <button
                 onClick={goToLanding}
-                className="mb-8 flex items-center space-x-2 space-x-reverse text-primary-purple font-bold hover:text-primary-pink transition-colors magic-hover bg-white/50 px-4 py-2 rounded-full inline-flex"
+                className="mb-8 flex items-center space-x-2 space-x-reverse text-white font-bold hover:text-pink-300 transition-colors magic-hover bg-black/60 neon-border px-4 py-2 rounded-full inline-flex"
               >
                 <span>{dir === 'rtl' ? '→' : '←'}</span>
                 <span>
@@ -121,10 +118,10 @@ function App() {
                   <button
                     key={category.id}
                     onClick={() => handleCategoryClick(category.id)}
-                    className="magic-hover flex flex-col items-center justify-center p-6 bg-white/70 backdrop-blur-sm rounded-3xl shadow-sm border-2 border-transparent hover:border-primary-pink transition-all group"
+                    className="magic-hover flex flex-col items-center justify-center p-6 bg-black/60 rounded-3xl shadow-sm neon-border hover:shadow-lg transition-all group"
                   >
                     <span className="text-5xl mb-4 group-hover:scale-110 transition-transform">{categoryIcons[category.id] || '✨'}</span>
-                    <span className="text-lg font-bold text-gray-800 text-center">{category.title[lang]}</span>
+                    <span className="text-lg font-bold text-white text-center neon-text">{category.title[lang]}</span>
                   </button>
                 ))}
               </div>
@@ -136,7 +133,7 @@ function App() {
             <div>
               <button
                 onClick={goToMenu}
-                className="mb-8 flex items-center space-x-2 space-x-reverse text-primary-purple font-bold hover:text-primary-pink transition-colors magic-hover bg-white/50 px-4 py-2 rounded-full inline-flex"
+                className="mb-8 flex items-center space-x-2 space-x-reverse text-white font-bold hover:text-pink-300 transition-colors magic-hover bg-black/60 neon-border px-4 py-2 rounded-full inline-flex"
               >
                 <span>{dir === 'rtl' ? '→' : '←'}</span>
                 <span>
