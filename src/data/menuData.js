@@ -130,7 +130,7 @@ export const menuData = {
         { id: "add_white_choc_balls", name: { ar: "كرات شوكلاتة بيضاء", he: "כדורי שוקולד לבן", en: "White Chocolate Balls" }, image: "add_white_choc_balls.jpg" },
         { id: "add_oreo", name: { ar: "أوريو", he: "אוראו", en: "Oreo" }, image: "add_oreo.jpg" },
         { id: "add_lotus", name: { ar: "لوتس", he: "לוטוס", en: "Lotus" }, image: "add_lotus.jpg" },
-        { id: "add_crushed_pistachio", name: { ar: "فستق مطحون", he: "פיסטוק גרוס", en: "Crushed Pistachio" }, image: "add_crushed_pistachio.jpg" },
+        { id: "add_crushed_pistachio", name: { ar: "فستق", he: "פיסטוק", en: "Pistachio" }, image: "add_crushed_pistachio.jpg" },
         { id: "add_walnuts", name: { ar: "جوز", he: "אגוזים", en: "Walnuts" }, image: "add_walnuts.jpg" },
         { id: "add_sprinkles", name: { ar: "سبرينكلز", he: "סוכריות צבעוניות", en: "Sprinkles" }, image: "add_sprinkles.jpg" },
         { id: "add_peanuts", name: { ar: "مكسرات", he: "בוטנים", en: "Peanuts" }, image: "add_peanuts.jpg" }
