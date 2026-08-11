@@ -157,6 +157,28 @@ export const menuData = {
         { id: "sauce_kinder", name: { ar: "كيندر", he: "קינדר", en: "Kinder" }, image: "sauce_kinder.jpg" },
         { id: "sauce_caramel", name: { ar: "كراميل", he: "קרמל", en: "Caramel" }, image: "sauce_caramel.jpg" }
       ]
+    },
+    mojito_base: {
+      title: { ar: "الأساس", he: "בסיס", en: "Base" },
+      items: [
+        { id: "base_soda", name: { ar: "صودا", he: "סודה", en: "Soda" }, image: "" },
+        { id: "base_sprite", name: { ar: "سبرايت", he: "ספרייט", en: "Sprite" }, image: "" },
+        { id: "base_xl", name: { ar: "إكس إل", he: "XL", en: "XL" }, image: "" }
+      ]
+    },
+    mojito_flavors: {
+      title: { ar: "النكهات", he: "טעמים", en: "Flavors" },
+      items: [
+        { id: "flavor_watermelon", name: { ar: "بطيخ", he: "אבטיח", en: "Watermelon" }, image: "" },
+        { id: "flavor_bubblegum", name: { ar: "علكة", he: "מסטיק", en: "Bubblegum" }, image: "" },
+        { id: "flavor_strawberry", name: { ar: "فراولة", he: "תות", en: "Strawberry" }, image: "" },
+        { id: "flavor_mint", name: { ar: "نعناع", he: "מנטה", en: "Mint" }, image: "" },
+        { id: "flavor_pineapple", name: { ar: "أناناس", he: "אננס", en: "Pineapple" }, image: "" },
+        { id: "flavor_wildberry", name: { ar: "توت بري", he: "פירות יער", en: "Wildberry" }, image: "" },
+        { id: "flavor_tropical_blu", name: { ar: "تروبيكال بلو", he: "טרופיקל בלו", en: "Tropical Blu" }, image: "" },
+        { id: "flavor_mango", name: { ar: "مانجا", he: "מנגו", en: "Mango" }, image: "" },
+        { id: "flavor_blueberry", name: { ar: "توت أزرق", he: "אוכמניות", en: "Blueberry" }, image: "" }
+      ]
     }
   }
 };
