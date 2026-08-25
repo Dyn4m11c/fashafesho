@@ -56,7 +56,11 @@ export const menuData = {
         { id: "american_biscuit", name: { ar: "مع بسكويت", he: "עם ביסקוויט", en: "With Biscuit" }, price: 7, color: "bg-teal-100", tagColor: "bg-teal-500", image: "american_biscuit.jpg" },
         { id: "american_small", name: { ar: "علبة صغيرة", he: "כוס קטנה", en: "Small Cup" }, price: 5, color: "bg-blue-100", tagColor: "bg-blue-500", image: "american_small.jpg" },
         { id: "american_medium", name: { ar: "علبة وسط", he: "כוס בינונית", en: "Medium Cup" }, price: 8, color: "bg-yellow-100", tagColor: "bg-yellow-500", image: "american_medium.jpg" },
-        { id: "american_large", name: { ar: "علبة كبيرة", he: "כוס גדולה", en: "Large Cup" }, price: 12, color: "bg-pink-200", tagColor: "bg-pink-600", image: "american_large.jpg" }
+        { id: "american_large", name: { ar: "علبة كبيرة", he: "כוס גדולה", en: "Large Cup" }, price: 12, color: "bg-pink-200", tagColor: "bg-pink-600", image: "american_large.jpg" },
+        { id: "yogurt_small", name: { ar: "يوجورت صغيرة", he: "יוגורט קטנה", en: "Small Cup" }, price: 15, color: "bg-blue-100", tagColor: "bg-blue-500", image: "yogurt_small.jpg" },
+        { id: "yogurt_medium", name: { ar: "يوجورت وسط", he: "יוגורט בינונית", en: "Medium Cup" }, price: 20, color: "bg-yellow-100", tagColor: "bg-yellow-500", image: "yogurt_medium.jpg" },
+        { id: "yogurt_large", name: { ar: "يوجورت كبيرة", he: "יוגורט גדולה", en: "Large Cup" }, price: 25, color: "bg-pink-200", tagColor: "bg-pink-600", image: "yogurt_large.jpg" },
+        { id: "sandy_cup", name: { ar: "ساندي", he: "סנדי", en: "Sandy" }, price: 17, color: "bg-blue-100", tagColor: "bg-blue-500", image: "sandy_cup.jpg" }
       ]
     },
     {
