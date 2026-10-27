@@ -15,8 +15,17 @@ export default function ItemModal({ item, lang, onClose, dir, onAddToCart }) {
     snow_thread_sauces: []
   });
 
+  const getUnitPrice = () => {
+    if (item.id === 'mojito' && selectedOptions.mojito_base.includes('base_xl')) {
+      return 30;
+    }
+    return item.price;
+  };
+
+  const unitPrice = getUnitPrice();
+
   const calculatePrice = () => {
-    let baseTotal = item.price * quantity;
+    let baseTotal = unitPrice * quantity;
     const additionsCount = selectedOptions.additions.length;
     if (additionsCount > 2) {
       baseTotal += (additionsCount - 2) * 2;
@@ -29,7 +38,10 @@ export default function ItemModal({ item, lang, onClose, dir, onAddToCart }) {
   const handleAddToCart = () => {
     const cartItem = {
       id: Math.random().toString(36).substring(2, 9),
-      item: item,
+      item: {
+        ...item,
+        price: unitPrice,
+      },
       selectedOptions: selectedOptions,
       quantity: quantity,
       totalPrice: totalPrice,
@@ -40,7 +52,13 @@ export default function ItemModal({ item, lang, onClose, dir, onAddToCart }) {
 
   const handleOptionToggle = (category, optionId) => {
     setSelectedOptions(prev => {
-      const current = prev[category];
+      const current = prev[category] || [];
+      if (category === 'mojito_base') {
+        return {
+          ...prev,
+          [category]: current.includes(optionId) ? [] : [optionId]
+        };
+      }
       if (current.includes(optionId)) {
         return { ...prev, [category]: current.filter(id => id !== optionId) };
       } else {
@@ -76,6 +94,11 @@ export default function ItemModal({ item, lang, onClose, dir, onAddToCart }) {
                   />
                 )}
                 <span>{opt.name[lang]}</span>
+                {opt.extraPrice ? (
+                  <span className="text-xs bg-pink-500/20 text-pink-300 px-1.5 py-0.5 rounded-full border border-pink-500/40">
+                    +{opt.extraPrice} NIS
+                  </span>
+                ) : null}
               </button>
             );
           })}
@@ -120,7 +143,7 @@ export default function ItemModal({ item, lang, onClose, dir, onAddToCart }) {
             <div>
               <h2 className="text-3xl font-black text-white neon-text mb-2">{item.name[lang]}</h2>
               <div className="inline-block px-4 py-1 rounded-full text-white font-bold text-lg bg-black/60 neon-border shadow-sm">
-                {item.price} NIS
+                {unitPrice} NIS
               </div>
             </div>
           </div>

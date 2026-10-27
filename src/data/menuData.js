@@ -175,7 +175,7 @@ export const menuData = {
       items: [
         { id: "base_soda", name: { ar: "صودا", he: "סודה", en: "Soda" }, image: "" },
         { id: "base_sprite", name: { ar: "سبرايت", he: "ספרייט", en: "Sprite" }, image: "" },
-        { id: "base_xl", name: { ar: "إكس إل", he: "XL", en: "XL" }, image: "" }
+        { id: "base_xl", name: { ar: "إكس إل", he: "XL", en: "XL" }, image: "", extraPrice: 3 }
       ]
     },
     mojito_flavors: {

@@ -89,9 +89,10 @@ export default function CartModal({ cart, lang, onClose, dir, onRemoveItem, onEm
                       <div className="mt-2 space-y-1">
                         {Object.entries(cartItem.selectedOptions).map(([category, options]) => {
                           if (options.length === 0) return null;
+                          const categoryTitle = menuData.options[category]?.title?.[lang] || category;
                           return (
                             <p key={category} className="text-sm text-gray-400">
-                              <span className="font-semibold text-gray-200 capitalize">{category}: </span>
+                              <span className="font-semibold text-gray-200">{categoryTitle}: </span>
                               {options.map(opt => getOptionName(category, opt)).join(', ')}
                             </p>
                           );
