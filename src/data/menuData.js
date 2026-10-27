@@ -45,6 +45,7 @@ export const menuData = {
       items: [
         { id: "waffle_regular", name: { ar: "بافل", he: "וופל", en: "Waffle" }, price: 20, color: "bg-yellow-200", tagColor: "bg-yellow-600", image: "waffle_regular.jpg" },
         { id: "waffle_sticks", name: { ar: "بافل أصابع", he: "אצבעות וופל", en: "Waffle sticks" }, price: 10, color: "bg-pink-100", tagColor: "bg-pink-500", image: "waffle_fingers.jpg" },
+        { id: "kanafe_sticks", name: { ar: "كنافه أصابع", he: "אצבעות קנאפה", en: "Kanafe sticks" }, price: 30, color: "bg-pink-100", tagColor: "bg-pink-500", image: "kanafe_fingers.jpg" },
         { id: "bubble_waffle", name: { ar: "بابل وافل", he: "באבל וופל", en: "Bubble Waffle" }, price: 35, color: "bg-purple-100", tagColor: "bg-purple-500", image: "bubble_waffle.jpg" }
       ]
     },
