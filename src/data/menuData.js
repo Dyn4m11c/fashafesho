@@ -21,10 +21,10 @@ export const menuData = {
       title: { ar: "الحلويات", he: "קינוחים", en: "Sweets" },
       subtitle: { ar: "", he: "", en: "" },
       items: [
-        { id: "donut", name: { ar: "دونات", he: "דונאטס", en: "Donut" }, price: 4, color: "bg-teal-100", tagColor: "bg-teal-500", image: "donut.jpg" },
-        { id: "fish", name: { ar: "سمكة مع بوظة", he: "דג עם גלידה", en: "Fish with ice cream" }, price: 25, color: "bg-blue-100", tagColor: "bg-blue-500", image: "fish.jpg" },
-        { id: "churros_6", name: { ar: "تشوروز (6 قطع)", he: "צ'ורוס (6 חתיכות)", en: "Churros (6 pieces)" }, price: 30, color: "bg-yellow-100", tagColor: "bg-yellow-500", image: "churros_6.jpg" },
-        { id: "churros_balls", name: { ar: "تشوروز طابات (12 حبات)", he: "כדורי צ'ורוס (12 יחידות)", en: "Churros Balls (12 pieces)" }, price: 25, color: "bg-purple-100", tagColor: "bg-purple-500", image: "churros_balls.jpg" },
+        { id: "donut", name: { ar: "دونات", he: "דונאטס", en: "Donut" }, price: 5, color: "bg-teal-100", tagColor: "bg-teal-500", image: "donut.jpg" },
+        { id: "fish", name: { ar: "سمكة مع بوظة", he: "דג עם גלידה", en: "Fish with ice cream" }, price: 30, color: "bg-blue-100", tagColor: "bg-blue-500", image: "fish.jpg" },
+        { id: "churros_6", name: { ar: "تشوروز (6 قطع)", he: "צ'ורוס (6 חתיכות)", en: "Churros (6 pieces)" }, price: 40, color: "bg-yellow-100", tagColor: "bg-yellow-500", image: "churros_6.jpg" },
+        { id: "churros_balls", name: { ar: "تشوروز طابات (12 حبات)", he: "כדורי צ'ורוס (12 יחידות)", en: "Churros Balls (12 pieces)" }, price: 40, color: "bg-purple-100", tagColor: "bg-purple-500", image: "churros_balls.jpg" },
       ]
     },
     {
@@ -32,9 +32,9 @@ export const menuData = {
       title: { ar: "الكريب", he: "קרפ", en: "Crepes" },
       subtitle: { ar: "", he: "", en: "" },
       items: [
-        { id: "crepe_regular", name: { ar: "كريب", he: "קרפ", en: "Crepe" }, price: 20, color: "bg-purple-200", tagColor: "bg-purple-600", image: "crepe_regular.jpg" },
-        { id: "crepe_sushi", name: { ar: "كريب سوشي", he: "קרפ סושי", en: "Sushi Crepe" }, price: 25, color: "bg-teal-200", tagColor: "bg-teal-600", image: "crepe_sushi.jpg" },
-        { id: "crepe_fettuccine", name: { ar: "كريب فوتتشيني", he: "קרפ פטוצ'יני", en: "Fettuccine Crepe" }, price: 35, color: "bg-blue-200", tagColor: "bg-blue-600", image: "crepe_fettuccine.jpg" }
+        { id: "crepe_regular", name: { ar: "كريب", he: "קרפ", en: "Crepe" }, price: 27, color: "bg-purple-200", tagColor: "bg-purple-600", image: "crepe_regular.jpg" },
+        { id: "crepe_sushi", name: { ar: "كريب سوشي", he: "קרפ סושי", en: "Sushi Crepe" }, price: 35, color: "bg-teal-200", tagColor: "bg-teal-600", image: "crepe_sushi.jpg" },
+        { id: "crepe_fettuccine", name: { ar: "كريب فوتتشيني", he: "קרפ פטוצ'יני", en: "Fettuccine Crepe" }, price: 40, color: "bg-blue-200", tagColor: "bg-blue-600", image: "crepe_fettuccine.jpg" }
       ]
     },
     {
@@ -42,10 +42,10 @@ export const menuData = {
       title: { ar: "البافل", he: "וופל", en: "Waffles" },
       subtitle: { ar: "", he: "", en: "" },
       items: [
-        { id: "waffle_regular", name: { ar: "بافل", he: "וופל", en: "Waffle" }, price: 20, color: "bg-yellow-200", tagColor: "bg-yellow-600", image: "waffle_regular.jpg" },
-        { id: "waffle_sticks", name: { ar: "بافل أصابع", he: "אצבעות וופל", en: "Waffle sticks" }, price: 10, color: "bg-pink-100", tagColor: "bg-pink-500", image: "waffle_fingers.jpg" },
+        { id: "waffle_regular", name: { ar: "بافل", he: "וופל", en: "Waffle" }, price: 27, color: "bg-yellow-200", tagColor: "bg-yellow-600", image: "waffle_regular.jpg" },
+        { id: "waffle_sticks", name: { ar: "بافل أصابع", he: "אצבעות וופל", en: "Waffle sticks" }, price: 15, color: "bg-pink-100", tagColor: "bg-pink-500", image: "waffle_fingers.jpg" },
         { id: "kanafe_sticks", name: { ar: "كنافه أصابع", he: "אצבעות קנאפה", en: "Kanafe sticks" }, price: 30, color: "bg-pink-100", tagColor: "bg-pink-500", image: "kanafe_fingers.jpg" },
-        { id: "bubble_waffle", name: { ar: "بابل وافل", he: "באבל וופל", en: "Bubble Waffle" }, price: 35, color: "bg-purple-100", tagColor: "bg-purple-500", image: "bubble_waffle.jpg" }
+        { id: "bubble_waffle", name: { ar: "بابل وافل", he: "באבל וופל", en: "Bubble Waffle" }, price: 45, color: "bg-purple-100", tagColor: "bg-purple-500", image: "bubble_waffle.jpg" }
       ]
     },
     {
@@ -54,13 +54,13 @@ export const menuData = {
       subtitle: { ar: "", he: "", en: "" },
       items: [
         { id: "american_biscuit", name: { ar: "مع بسكويت", he: "עם ביסקוויט", en: "With Biscuit" }, price: 7, color: "bg-teal-100", tagColor: "bg-teal-500", image: "american_biscuit.jpg" },
-        { id: "american_small", name: { ar: "علبة صغيرة", he: "כוס קטנה", en: "Small Cup" }, price: 5, color: "bg-blue-100", tagColor: "bg-blue-500", image: "american_small.jpg" },
-        { id: "american_medium", name: { ar: "علبة وسط", he: "כוס בינונית", en: "Medium Cup" }, price: 8, color: "bg-yellow-100", tagColor: "bg-yellow-500", image: "american_medium.jpg" },
-        { id: "american_large", name: { ar: "علبة كبيرة", he: "כוס גדולה", en: "Large Cup" }, price: 12, color: "bg-pink-200", tagColor: "bg-pink-600", image: "american_large.jpg" },
-        { id: "yogurt_small", name: { ar: "يوجورت صغيرة", he: "יוגורט קטנה", en: "Small Cup" }, price: 15, color: "bg-blue-100", tagColor: "bg-blue-500", image: "yogurt_small.jpg" },
-        { id: "yogurt_medium", name: { ar: "يوجورت وسط", he: "יוגורט בינונית", en: "Medium Cup" }, price: 20, color: "bg-yellow-100", tagColor: "bg-yellow-500", image: "yogurt_medium.jpg" },
-        { id: "yogurt_large", name: { ar: "يوجورت كبيرة", he: "יוגורט גדולה", en: "Large Cup" }, price: 25, color: "bg-pink-200", tagColor: "bg-pink-600", image: "yogurt_large.jpg" },
-        { id: "sandy_cup", name: { ar: "ساندي", he: "סנדי", en: "Sandy" }, price: 17, color: "bg-blue-100", tagColor: "bg-blue-500", image: "sandy_cup.jpg" }
+        { id: "american_small", name: { ar: "علبة صغيرة", he: "כוס קטנה", en: "Small Cup" }, price: 6, color: "bg-blue-100", tagColor: "bg-blue-500", image: "american_small.jpg" },
+        { id: "american_medium", name: { ar: "علبة وسط", he: "כוס בינונית", en: "Medium Cup" }, price: 9, color: "bg-yellow-100", tagColor: "bg-yellow-500", image: "american_medium.jpg" },
+        { id: "american_large", name: { ar: "علبة كبيرة", he: "כוס גדולה", en: "Large Cup" }, price: 15, color: "bg-pink-200", tagColor: "bg-pink-600", image: "american_large.jpg" },
+        { id: "yogurt_small", name: { ar: "يوجورت صغيرة", he: "יוגורט קטנה", en: "Small Cup" }, price: 17, color: "bg-blue-100", tagColor: "bg-blue-500", image: "yogurt_small.jpg" },
+        { id: "yogurt_medium", name: { ar: "يوجورت وسط", he: "יוגורט בינונית", en: "Medium Cup" }, price: 25, color: "bg-yellow-100", tagColor: "bg-yellow-500", image: "yogurt_medium.jpg" },
+        { id: "yogurt_large", name: { ar: "يوجورت كبيرة", he: "יוגורט גדולה", en: "Large Cup" }, price: 30, color: "bg-pink-200", tagColor: "bg-pink-600", image: "yogurt_large.jpg" },
+        { id: "sandy_cup", name: { ar: "ساندي", he: "סנדי", en: "Sandy" }, price: 20, color: "bg-blue-100", tagColor: "bg-blue-500", image: "sandy_cup.jpg" }
       ]
     },
     {
@@ -68,13 +68,13 @@ export const menuData = {
       title: { ar: "آيس كريم بالعلبة", he: "גלידה בכוס", en: "Ice Cream Cup" },
       subtitle: { ar: "", he: "", en: "" },
       items: [
-        { id: "snow_thread", name: { ar: "بوظة خيوط الثلج", he: "גלידת חוטי שלג", en: "Snow Thread Ice Cream" }, price: 10, color: "bg-pink-200", tagColor: "bg-pink-600", image: "snow_thread.jpg" },
-        { id: "cup_small_1", name: { ar: "صغير - طابة واحدة", he: "קטן - כדור אחד", en: "Small - 1 Scoop" }, price: 5, color: "bg-purple-200", tagColor: "bg-purple-600", image: "cup_small_1.jpg" },
-        { id: "cup_small_2", name: { ar: "صغير - طابتين", he: "קטן - 2 כדורים", en: "Small - 2 Scoops" }, price: 8, color: "bg-teal-200", tagColor: "bg-teal-600", image: "cup_small_2.jpg" },
+        { id: "snow_thread", name: { ar: "بوظة خيوط الثلج", he: "גלידת חוטי שלג", en: "Snow Thread Ice Cream" }, price: 15, color: "bg-pink-200", tagColor: "bg-pink-600", image: "snow_thread.jpg" },
+        { id: "cup_small_1", name: { ar: "صغير - طابة واحدة", he: "קטן - כדור אחד", en: "Small - 1 Scoop" }, price: 7, color: "bg-purple-200", tagColor: "bg-purple-600", image: "cup_small_1.jpg" },
+        { id: "cup_small_2", name: { ar: "صغير - طابتين", he: "קטן - 2 כדורים", en: "Small - 2 Scoops" }, price: 10, color: "bg-teal-200", tagColor: "bg-teal-600", image: "cup_small_2.jpg" },
         { id: "cup_med_2", name: { ar: "وسط - طابتين", he: "בינוני - 2 כדורים", en: "Medium - 2 Scoops" }, price: 10, color: "bg-blue-200", tagColor: "bg-blue-600", image: "cup_med_2.jpg" },
-        { id: "cup_med_3", name: { ar: "وسط - 3 طابات", he: "בינוני - 3 כדורים", en: "Medium - 3 Scoops" }, price: 12, color: "bg-yellow-200", tagColor: "bg-yellow-600", image: "cup_med_3.jpg" },
-        { id: "cup_large_3", name: { ar: "كبير - 3 طابات", he: "גדול - 3 כדורים", en: "Large - 3 Scoops" }, price: 12, color: "bg-pink-100", tagColor: "bg-pink-500", image: "cup_large_3.jpg" },
-        { id: "cup_large_4", name: { ar: "كبير - 4 طابات", he: "גדול - 4 כדורים", en: "Large - 4 Scoops" }, price: 15, color: "bg-purple-100", tagColor: "bg-purple-500", image: "cup_large_4.jpg" }
+        { id: "cup_med_3", name: { ar: "وسط - 3 طابات", he: "בינוני - 3 כדורים", en: "Medium - 3 Scoops" }, price: 15, color: "bg-yellow-200", tagColor: "bg-yellow-600", image: "cup_med_3.jpg" },
+        { id: "cup_large_3", name: { ar: "كبير - 3 طابات", he: "גדול - 3 כדורים", en: "Large - 3 Scoops" }, price: 15, color: "bg-pink-100", tagColor: "bg-pink-500", image: "cup_large_3.jpg" },
+        { id: "cup_large_4", name: { ar: "كبير - 4 طابات", he: "גדול - 4 כדורים", en: "Large - 4 Scoops" }, price: 20, color: "bg-purple-100", tagColor: "bg-purple-500", image: "cup_large_4.jpg" }
       ]
     },
     {
@@ -82,11 +82,11 @@ export const menuData = {
       title: { ar: "آيس كريم بالبسكويت", he: "גלידה בגביע", en: "Ice Cream Biscuit" },
       subtitle: { ar: "", he: "", en: "" },
       items: [
-        { id: "cone_small_1", name: { ar: "صغير - طابة واحدة", he: "קטן - כדור אחד", en: "Small - 1 Scoop" }, price: 5, color: "bg-teal-100", tagColor: "bg-teal-500", image: "cone_small_1.jpg" },
+        { id: "cone_small_1", name: { ar: "صغير - طابة واحدة", he: "קטן - כדור אחד", en: "Small - 1 Scoop" }, price: 7, color: "bg-teal-100", tagColor: "bg-teal-500", image: "cone_small_1.jpg" },
         { id: "cone_small_2", name: { ar: "صغير - طابتين", he: "קטן - 2 כדורים", en: "Small - 2 Scoops" }, price: 8, color: "bg-blue-100", tagColor: "bg-blue-500", image: "cone_small_2.jpg" },
-        { id: "cone_large_2", name: { ar: "كبير - طابتين", he: "גדול - 2 כדורים", en: "Large - 2 Scoops" }, price: 10, color: "bg-yellow-100", tagColor: "bg-yellow-500", image: "cone_large_2.jpg" },
-        { id: "cone_large_3", name: { ar: "كبير - 3 طابات", he: "גדול - 3 כדורים", en: "Large - 3 Scoops" }, price: 13, color: "bg-pink-200", tagColor: "bg-pink-600", image: "cone_large_3.jpg" },
-        { id: "cone_large_4", name: { ar: "كبير - 4 طابات", he: "גדול - 4 כדורים", en: "Large - 4 Scoops" }, price: 16, color: "bg-purple-200", tagColor: "bg-purple-600", image: "cone_large_4.jpg" }
+        { id: "cone_large_2", name: { ar: "كبير - طابتين", he: "גדול - 2 כדורים", en: "Large - 2 Scoops" }, price: 8, color: "bg-yellow-100", tagColor: "bg-yellow-500", image: "cone_large_2.jpg" },
+        { id: "cone_large_3", name: { ar: "كبير - 3 طابات", he: "גדול - 3 כדורים", en: "Large - 3 Scoops" }, price: 15, color: "bg-pink-200", tagColor: "bg-pink-600", image: "cone_large_3.jpg" },
+        { id: "cone_large_4", name: { ar: "كبير - 4 طابات", he: "גדול - 4 כדורים", en: "Large - 4 Scoops" }, price: 20, color: "bg-purple-200", tagColor: "bg-purple-600", image: "cone_large_4.jpg" }
       ]
     },
     {
@@ -94,18 +94,20 @@ export const menuData = {
       title: { ar: "المشروبات", he: "משקאות", en: "Beverages" },
       subtitle: { ar: "", he: "", en: "" },
       items: [
-        { id: "shake_pretzel", name: { ar: "ميلك شيك بيچلا", he: "מילקשייק בייגלה", en: "Pretzel Milkshake" }, price: 30, color: "bg-yellow-100", tagColor: "bg-yellow-500", image: "shake_pretzel.jpg" },
-        { id: "shake_kinder", name: { ar: "ميلك شيك كيندر", he: "מילקשייק קינדר", en: "Kinder Milkshake" }, price: 30, color: "bg-yellow-200", tagColor: "bg-yellow-600", image: "shake_kinder.jpg" },
-        { id: "shake_vanilla", name: { ar: "ميلك شيك فانيل", he: "מילקשייק וניל", en: "Vanilla Milkshake" }, price: 25, color: "bg-blue-100", tagColor: "bg-blue-500", image: "shake_vanilla.jpg" },
-        { id: "shake_pistachio", name: { ar: "ميلك شيك فستق حلبي", he: "מילקשייק פיסטוק חלבי", en: "Pistachio Milkshake" }, price: 35, color: "bg-pink-100", tagColor: "bg-pink-500", image: "shake_pistachio.jpg" },
-        { id: "shake_chocolate", name: { ar: "ميلك شيك شوكولاتة", he: "מילקשייק שוקולד", en: "Chocolate Milkshake" }, price: 25, color: "bg-purple-100", tagColor: "bg-purple-500", image: "shake_chocolate.jpg" },
-        { id: "shake_lotus", name: { ar: "ميلك شيك لوتس", he: "מילקשייק לוטוס", en: "Lotus Milkshake" }, price: 30, color: "bg-teal-100", tagColor: "bg-teal-500", image: "shake_lotus.jpg" },
-        { id: "fakhfakhina", name: { ar: "فخفخينا", he: "פחפחינא", en: "Fakhfakhina" }, price: 25, color: "bg-teal-100", tagColor: "bg-teal-500", image: "fakhfakhina.jpg" },
+        { id: "shake_oreo", name: { ar: "ميلك شيك أوريو", he: "מילקשייק אוראו", en: "Oreo Milkshake" }, price: 30, color: "bg-purple-200", tagColor: "bg-purple-600", image: "shake_oreo.jpg" },
+        { id: "shake_banana", name: { ar: "ميلك شيك موز", he: "מילקשייק בננה", en: "Banana Milkshake" }, price: 27, color: "bg-yellow-100", tagColor: "bg-yellow-500", image: "shake_banana.jpg" },
+        { id: "shake_bubblegum", name: { ar: "ميلك شيك بازوكا", he: "מילקשייק מסטיק", en: "Bubblegum Milkshake" }, price: 35, color: "bg-pink-200", tagColor: "bg-pink-600", image: "shake_bubblegum.jpg" },
+        { id: "shake_kinder", name: { ar: "ميلك شيك كيندر", he: "מילקשייק קינדר", en: "Kinder Milkshake" }, price: 35, color: "bg-yellow-200", tagColor: "bg-yellow-600", image: "shake_kinder.jpg" },
+        { id: "shake_vanilla", name: { ar: "ميلك شيك فانيل", he: "מילקשייק וניל", en: "Vanilla Milkshake" }, price: 27, color: "bg-blue-100", tagColor: "bg-blue-500", image: "shake_vanilla.jpg" },
+        { id: "shake_pistachio", name: { ar: "ميلك شيك فستق حلبي", he: "מילקשייק פיסטוק חלבי", en: "Pistachio Milkshake" }, price: 38, color: "bg-pink-100", tagColor: "bg-pink-500", image: "shake_pistachio.jpg" },
+        { id: "shake_chocolate", name: { ar: "ميلك شيك شوكولاتة", he: "מילקשייק שוקולד", en: "Chocolate Milkshake" }, price: 27, color: "bg-purple-100", tagColor: "bg-purple-500", image: "shake_chocolate.jpg" },
+        { id: "shake_lotus", name: { ar: "ميلك شيك لوتس", he: "מילקשייק לוטוס", en: "Lotus Milkshake" }, price: 35, color: "bg-teal-100", tagColor: "bg-teal-500", image: "shake_lotus.jpg" },
+        { id: "fakhfakhina", name: { ar: "فخفخينا", he: "פחפחינא", en: "Fakhfakhina" }, price: 30, color: "bg-teal-100", tagColor: "bg-teal-500", image: "fakhfakhina.jpg" },
         { id: "mojito", name: { ar: "موخيتو", he: "מוחיטו", en: "Mojito" }, price: 27, color: "bg-blue-200", tagColor: "bg-blue-600", image: "mojito.jpg" },
-        { id: "passiflora_small", name: { ar: "بسفلورا (صغير)", he: "פסיפלורה (קטן)", en: "Passiflora (Small)" }, price: 8, color: "bg-blue-100", tagColor: "bg-blue-500", image: "passiflora_small.jpg" },
-        { id: "passiflora_large", name: { ar: "بسفلورا (كبير)", he: "פסיפלורה (גדול)", en: "Passiflora (Large)" }, price: 10, color: "bg-yellow-100", tagColor: "bg-yellow-500", image: "passiflora_large.jpg" },
-        { id: "ice_cafe_small", name: { ar: "آيس كوفي (صغير)", he: "אייס קפה (קטן)", en: "Ice Cafe (Small)" }, price: 8, color: "bg-pink-200", tagColor: "bg-pink-600", image: "ice_cafe_small.jpg" },
-        { id: "ice_cafe_large", name: { ar: "آيس كوفي (كبير)", he: "אייס קפה (גדול)", en: "Ice Cafe (Large)" }, price: 10, color: "bg-purple-200", tagColor: "bg-purple-600", image: "ice_cafe_large.jpg" }
+        { id: "passiflora_small", name: { ar: "بسفلورا (صغير)", he: "פסיפלורה (קטן)", en: "Passiflora (Small)" }, price: 10, color: "bg-blue-100", tagColor: "bg-blue-500", image: "passiflora_small.jpg" },
+        { id: "passiflora_large", name: { ar: "بسفلورا (كبير)", he: "פסיפלורה (גדול)", en: "Passiflora (Large)" }, price: 12, color: "bg-yellow-100", tagColor: "bg-yellow-500", image: "passiflora_large.jpg" },
+        { id: "ice_cafe_small", name: { ar: "آيس كوفي (صغير)", he: "אייס קפה (קטן)", en: "Ice Cafe (Small)" }, price: 10, color: "bg-pink-200", tagColor: "bg-pink-600", image: "ice_cafe_small.jpg" },
+        { id: "ice_cafe_large", name: { ar: "آيس كوفي (كبير)", he: "אייס קפה (גדול)", en: "Ice Cafe (Large)" }, price: 12, color: "bg-purple-200", tagColor: "bg-purple-600", image: "ice_cafe_large.jpg" }
       ]
     }
   ],
@@ -156,17 +158,17 @@ export const menuData = {
     ice_cream: {
       title: { ar: "نكهات الآيس كريم", he: "טעמי גלידה", en: "Ice Cream Flavors" },
       items: [
+        { id: "ic_dubai", name: { ar: "دبي", he: "דובאי", en: "Dubai" }, image: "ic_dubai.jpg" },
+        { id: "ic_banana", name: { ar: "موز", he: "בננה", en: "Banana" }, image: "ic_banana.jpg" },
+        { id: "ic_bubblegum", name: { ar: "علكة", he: "מסטיק", en: "Bubblegum" }, image: "ic_bubblegum.jpg" },
         { id: "ic_lotus", name: { ar: "لوتس", he: "לוטוס", en: "Lotus" }, image: "ic_lotus.jpg" },
         { id: "ic_kinder", name: { ar: "كيندر", he: "קינדר", en: "Kinder" }, image: "ic_kinder.jpg" },
-        { id: "ic_pretzel", name: { ar: "بيچلا", he: "בייגלה", en: "Pretzel" }, image: "ic_pretzel.jpg" },
         { id: "ic_halva", name: { ar: "حلاوة", he: "חלווה", en: "Halva" }, image: "ic_halva.jpg" },
         { id: "ic_chocolate", name: { ar: "شوكلاتة", he: "שוקולד", en: "Chocolate" }, image: "ic_chocolate.jpg" },
         { id: "ic_vanilla", name: { ar: "ڤانيل", he: "וניל", en: "Vanilla" }, image: "ic_vanilla.jpg" },
         { id: "ic_pistachio", name: { ar: "بستاشيو", he: "פיסטוק", en: "Pistachio" }, image: "ic_pistachio.jpg" },
         { id: "ic_oreo", name: { ar: "اوريو", he: "אוראו", en: "Oreo" }, image: "ic_oreo.jpg" },
-        { id: "ic_sweet_berries", name: { ar: "توت بري حلو", he: "פירות יער מתוק", en: "Sweet Wild Berries" }, image: "ic_sweet_berries.jpg" },
-        { id: "ic_wild_berries", name: { ar: "توت بري", he: "פירות יער", en: "Wild Berries" }, image: "ic_wild_berries.jpg" },
-        { id: "ic_blue_marshmellow", name: { ar: "مارشميلو", he: "מרשמלו", en: "Blue Marshmellow" }, image: "ic_blue_marshmellow.jpg" }
+        { id: "ic_wild_berries", name: { ar: "توت بري", he: "פירות יער", en: "Wild Berries" }, image: "ic_wild_berries.jpg" }
       ]
     },
     mojito_base: {
